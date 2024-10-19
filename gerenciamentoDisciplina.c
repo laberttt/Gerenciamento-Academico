@@ -21,3 +21,35 @@ void imprimeAluno(tAluno aluno) {
         aluno.matricula, aluno.nome, aluno.nota1, aluno.nota2, aluno.nota3, aluno.recuperacao, aluno.media, aluno.situacao);
     }
 }
+
+// Função para ler os dados de todos alunos
+tAluno * lerAluno(tAluno * retorno) {
+    printf("Matricula: ");
+    scanf("%ld", &retorno->matricula);
+    getchar(); // Usando para limpar o buffer do entrer após matricula
+    printf("Nome: ");
+    fgets(retorno->nome, sizeof(retorno->nome), stdin);
+
+    // Removendo o \n ao final do nome
+    if (retorno->nome[strlen(retorno->nome) - 1] == "\n") {
+        retorno->nome[strlen(retorno->nome) - 1] == "\0";
+    }
+    return retorno;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+int main()
+{
+    
+    return 0;
+}
