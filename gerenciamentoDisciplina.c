@@ -101,6 +101,7 @@ int main() {
     printf("\t[2] - Cadastrar Nova Nota\n");
     scanf("%d", &opc);
 
+    // Verificando qual opção o usuário escolheu
     if (opc == 1) {
         lerArquivo("./relatorioDeControle.txt");
         return 0;
