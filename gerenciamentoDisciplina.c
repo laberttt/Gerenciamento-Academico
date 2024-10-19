@@ -68,7 +68,24 @@ float mediaFinal(tAluno aluno) {
     return (aluno.media * 6 + aluno.recuperacao * 4) / 10;
 }
 
+// Função para ler o arquivo
+void lerArquivo(char *nomeArquivo) {
+    FILE *fp;
+    char linha[100];
 
+    fp = fopen(nomeArquivo, "r");
+
+    if (!fp) {
+        printf("Erro ao abrir o arquivo\n");
+        return;
+    }
+
+    while (fgets(linha, sizeof(linha), fp) != NULL) {
+        printf("%s", linha);
+    }
+    
+    fclose(fp);
+}
 
 int main()
 {
