@@ -186,9 +186,9 @@ int main() {
         for (int i = 0; i < qntAlunos; i++) {
             // Escreve os dados dos alunos no arquivo
             if (alunos[i].recuperacao < 0.001) {
-                fprintf(fp, "%-12ld %-20s %-6.1f %-6.1f %-6.1f %-10s %-14.1f %-4s\n", alunos[i].matricula, alunos[i].nome, alunos[i].nota1, alunos[i].nota2, alunos[i].nota3, "-", alunos[i].media, alunos[i].situacao);
+                fprintf(fp, "%-12ld %-20s %-6.1f %-6.1f %-6.1f %-10s %-10.1f %-6s\n", alunos[i].matricula, alunos[i].nome, alunos[i].nota1, alunos[i].nota2, alunos[i].nota3, "-", alunos[i].media, alunos[i].situacao);
             } else{
-                fprintf(fp, "%-12ld %-20s %-6.1f %-6.1f %-6.1f %-10.1f %-14.1f %-4s\n", alunos[i].matricula, alunos[i].nome, alunos[i].nota1, alunos[i].nota2, alunos[i].nota3, alunos[i].recuperacao, alunos[i].media, alunos[i].situacao);
+                fprintf(fp, "%-12ld %-20s %-6.1f %-6.1f %-6.1f %-10.1f %-10.1f %-6s\n", alunos[i].matricula, alunos[i].nome, alunos[i].nota1, alunos[i].nota2, alunos[i].nota3, alunos[i].recuperacao, alunos[i].media, alunos[i].situacao);
             }
         }
 
@@ -196,22 +196,11 @@ int main() {
         fclose(fp);
     }
 
-    /*
-    //Imprime os dados dos alunos
-
-    puts("\n");
-    printf("\t%-12s %-20s %-6s %-6s %-6s %-11s %-6s %-10s\n", "Matricula", "Nome", "Nota1", "Nota2", "Nota3", "Recuperacao", "Media", "Situacao");
-
-    printf("\t" "--------------------------------" "-------------------" "------" "------" "------" "-----------" "------" "---------\n");
     
-    
-    for (int i = 0; i < qntAlunos; i++){
-        imprimeAluno(alunos[i]);
-    }*/
 
     puts("\n\n\n");
     puts("\t-----------------------------------------------------");
-    printf("\tRelatorio de Controle de Disciplina\n");
+    printf("\t\tRelatorio de Controle de Disciplina\n");
     puts("\t-----------------------------------------------------");
     puts("\n");
 
