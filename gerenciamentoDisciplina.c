@@ -50,12 +50,23 @@ tAluno * lerNotas(tAluno * retorno) {
     return retorno;
 }
 
+// Função para ler a nota da recuperação do aluno
+tAluno * lerRecuperacao(tAluno * retorno) {
+    printf("Recuperacao: ");
+    scanf("%f", &retorno->recuperacao);
 
+    return retorno;
+}
 
+// Função que calcula a média do aluno
+float Media(tAluno aluno) {
+    return (aluno.nota1 + aluno.nota2 + aluno.nota3) / 3;
+}
 
-
-
-
+// Função que calcula a média final do aluno
+float mediaFinal(tAluno aluno) {
+    return (aluno.media * 6 + aluno.recuperacao * 4) / 10;
+}
 
 
 
