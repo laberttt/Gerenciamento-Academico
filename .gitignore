@@ -52,13 +52,4 @@ Module.symvers
 Mkfile.old
 dkms.conf
 
-.vscode/
-
-output/relatorioDeControle.txt
-
-/abrirRelatorio.c
-
-/gerenciamentoDisciplina.exe
-
-./relatorioDeControle.txt
-/controleDisciplinaFILE.txt
+/IC Projeto - Gerenciamento Acadêmico/output/
