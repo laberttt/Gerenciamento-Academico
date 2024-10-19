@@ -37,7 +37,18 @@ tAluno * lerAluno(tAluno * retorno) {
     return retorno;
 }
 
+// Função para ler os notas do aluno
+tAluno * lerNotas(tAluno * retorno) {
+    printf("\nCadastro das notas - %s\n", retorno->nome);
+    printf("Nota1: ");
+    scanf("%f", &retorno->nota1);
+    printf("Nota2: ");
+    scanf("%f", &retorno->nota2);
+    printf("Nota3: ");
+    scanf("%f", &retorno->nota3);
 
+    return retorno;
+}
 
 
 
